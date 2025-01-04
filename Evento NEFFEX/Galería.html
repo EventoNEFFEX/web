@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <a href="Evento.html" class="link">Inicio</a>
+</head>
+<body>
+    <h1 class="titulo">Galeria</h1>
+    <div class="galeria">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\1.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\2.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\3.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\4.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\5.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\6.jpeg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\7.webp">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\8.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\9.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\10.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\11.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\12.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\13.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\14.jpg">
+        <img src="C:\Users\carlo\OneDrive\Escritorio\Evento NEFFEX\Imagenes de evento\15.jpg">
+    </div>
+    <style>
+    .titulo{
+      font-size: 50px;
+      margin: 0;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .galeria{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+      gap: 10px; /* Espaciado entre las imágenes */
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .galeria img{
+      width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho de la celda */
+      height: auto; /* Mantén la proporción de las imágenes */
+      aspect-ratio: 1 / 1; /* Forzar imágenes cuadradas */
+      object-fit: cover; /* Recorta las imágenes si no son cuadradas */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .galeria img:hover{
+      transform: scale(1.05); /* Animación al pasar el cursor */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+    }
+
+    .link{
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    .link:hover{
+    background-color: #007BFF;
+    color: #fff;
+    }
+    </style>
+</body>
+</html>

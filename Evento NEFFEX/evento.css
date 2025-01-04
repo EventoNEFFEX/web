@@ -1,0 +1,158 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Cabecera */
+.header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+.title h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.title p {
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+/* Contenido principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 0 20px;
+    gap: 20px;
+    float: left;
+    margin-left: 40px;
+}
+
+.text {
+    flex: 1;
+    max-width: 800px;
+    text-align: justify;
+    
+}
+
+.text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin:50px;
+    margin-right: 150px;
+}
+
+.clock-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* General styles for the section */
+.event-section {
+    padding: 40px 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Grid layout for the items */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1024px) {
+    .event-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.Image-container img{
+    width: 100vw;
+    height:auto;
+    display:block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.video-section {
+    flex: 4; /* 60% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 1000px;
+}
+
+.video-section video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.links-section {
+    flex: 2; /* 40% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.links-section .link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.links-section .link:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
